@@ -43,6 +43,5 @@ fun main() {
     val outputFile = File(Thread.currentThread().contextClassLoader.getResource("check.txt").file)
     generate(descriptions, outputFile)
 
-    val analyzer = WeatherStationAnalyzer()
-    analyzer.analyzeWeatherStationsData("check.txt")
+    analyzeWeatherStationsData("check.txt")
 }
